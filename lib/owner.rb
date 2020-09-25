@@ -38,10 +38,10 @@ class Owner
  end 
  
  
-# def buy_cat(name)
-#  @cats << name 
+def buy_cat(name)
+ @cats << name 
   
-# end
+end
  
 # def buy_dog(dog)
 #   @dogs == Dog.new(name,self) 

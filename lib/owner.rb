@@ -51,8 +51,8 @@ def buy_dog(dog)
    end 
    end 
    
-   def feed_cats
-     Cats.all.each do |cat|
+  def feed_cats
+     Cat.all.each do |cat|
        cat.mood = "happy"
      end 
      end 

@@ -59,10 +59,10 @@ def buy_dog(dog)
      end 
      
     def sell_pets
-    cats.each && dogs.each do |pet, animals|
-      animals.each do |pet|
-        pet.mood = 'nervous'
-      end
+    pets.each do |species, animals|
+      animals.each do |animal|
+        animal.mood = "nervous"
+        end
       animals.clear
     end
   end

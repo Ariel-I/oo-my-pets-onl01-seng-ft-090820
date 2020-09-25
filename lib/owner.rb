@@ -59,13 +59,11 @@ def buy_dog(dog)
      end 
      
     def sell_pets
-    pets.each do |species, animals|
-      animals.each do |animal|
-        animal.mood = "nervous"
-        end
-      animals.clear
-    end
-  end
+    self.cats.each do |cat|
+      self.cats.delete(cat)
+      cat.owner = nil
+      cat.mood = "nervous"
+    end 
        
     def list_pets
        "I have #{dogs.length} dog(s), and #{cats.length} cat(s)."

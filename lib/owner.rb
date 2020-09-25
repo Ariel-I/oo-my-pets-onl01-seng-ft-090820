@@ -31,8 +31,8 @@ class Owner
  
  
  
- def buy_cat(cat_name)
-  @cats << cat_name 
+ def buy_cat(name)
+  @cats << name 
   
  end
  

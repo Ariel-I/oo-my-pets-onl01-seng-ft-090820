@@ -62,7 +62,7 @@ def buy_dog(dog)
       animals.each do |animal|
         animal.mood = 'nervous'
       end
-      arr.clear
+      animals.clear
     end
   end
        

@@ -9,8 +9,6 @@ class Owner
    @species = "human"
    @name = name
    @@all << self 
-   @cats = []
-   @dogs = []
  end 
  
  def self.all 
@@ -43,9 +41,9 @@ def buy_cat(name)
   
 end
  
-# def buy_dog(dog)
-#   @dogs == Dog.new(name,self) 
- #end 
+def buy_dog(dog)
+   @dogs == Dog.new(name,self) 
+ end 
  
  def walk_dogs
    @dogs.each do |dog|

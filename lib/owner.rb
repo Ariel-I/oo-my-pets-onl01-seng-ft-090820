@@ -31,7 +31,7 @@ class Owner
  
  
  def cats
-
+ owner.cats = []
  end 
  
  def dogs 

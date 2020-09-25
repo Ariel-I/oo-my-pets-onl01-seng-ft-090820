@@ -31,8 +31,7 @@ class Owner
  
  
  def cats
-   @cats.count
-  
+
  end 
  
  def dogs 
@@ -40,27 +39,27 @@ class Owner
  end 
  
  def buy_cat(name)
-   Cat.new(name, self)
+  @cats == Cat.new(name, self)
  end
  
  def buy_dog(dog)
-   @pets[:dogs] << Dog.new 
+   @dogs == Dog.new(name,self) 
  end 
  
  def walks_dogs
-   @pets[:dogs].each do |dog|
+   @dogs.each do |dog|
      dog.mood = "happy"
    end 
    end 
    
    def feed_cats
-     @pets[:cats].each do |cat|
+     @cats.each do |cat|
        cat.mood = "happy"
      end 
      end 
      
      def sell_pets
-       pets.each do |species, animals|
+       @pets.each do |species, animals|
          animals.each do |animal|
            animal.mood = "nervous"
          end

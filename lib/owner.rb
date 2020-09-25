@@ -1,7 +1,7 @@
 class Owner
  
  attr_reader :species, :name
- attr_accessor :cats, :dogs 
+ attr_accessor :cats, :dogs, :pets 
  
  @@all = []
 
@@ -52,7 +52,7 @@ def buy_dog(dog)
    end 
    
    def feed_cats
-     @cats.each do |cat|
+     Cats.all.each do |cat|
        cat.mood = "happy"
      end 
      end 

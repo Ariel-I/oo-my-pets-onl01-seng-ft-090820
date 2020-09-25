@@ -61,7 +61,7 @@ def buy_dog(dog)
     def sell_pets
     pets.each do |pet, animals|
       animals.map do |pet|
-        animal.mood = 'nervous'
+        pet.mood = 'nervous'
       end
       animals.clear
     end

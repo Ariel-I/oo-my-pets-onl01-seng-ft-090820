@@ -16,7 +16,8 @@ class Cat
   
   def owner=(owner)
     @owner = owner
-    
+    owner.buy_cat(self)
+  end 
 
  def self.all
    @@all 

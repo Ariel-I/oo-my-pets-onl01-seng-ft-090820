@@ -40,7 +40,7 @@ class Owner
  
  def buy_cat(name)
   @cats << name 
-  name.owner == self 
+  name.owner = self 
  end
  
  def buy_dog(dog)

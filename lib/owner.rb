@@ -29,17 +29,18 @@ class Owner
    "I am a #{species}."
  end 
  
+ def cats
+   Cats.all 
  
  
- 
- def buy_cat(name)
-  @cats << name 
+# def buy_cat(name)
+#  @cats << name 
   
- end
+# end
  
- def buy_dog(dog)
-   @dogs == Dog.new(name,self) 
- end 
+# def buy_dog(dog)
+#   @dogs == Dog.new(name,self) 
+ #end 
  
  def walk_dogs
    @dogs.each do |dog|

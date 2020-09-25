@@ -58,7 +58,7 @@ def buy_dog(dog)
      end 
      
     def sell_pets
-    pets.each do |pet, arr|
+    cats.each && dogs.each do |pet, arr|
       arr.map do |pet|
         pet.mood = 'nervous'
       end

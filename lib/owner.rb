@@ -64,6 +64,12 @@ def buy_dog(dog)
       cat.owner = nil
       cat.mood = "nervous"
     end 
+    self.dogs.each do |dog|
+      self.dogs.delete(dog)
+      dog.owner = nil 
+      dog.mood = "nervous"
+    end 
+  end 
        
     def list_pets
        "I have #{dogs.length} dog(s), and #{cats.length} cat(s)."
